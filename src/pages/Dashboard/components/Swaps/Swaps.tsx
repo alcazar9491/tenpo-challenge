@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 import { getMoralisSwaps } from "services/moralis.service";
 import { SwapsTable } from "./SwapsTable";
 
-const LIMIT = 1;
+const LIMIT = 50;
 export const Swaps = () => {
   const [Loading, setLoading] = useState(false);
   const [Cursor, setCursor] = useState<string>("");
